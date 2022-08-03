@@ -10,4 +10,4 @@ git add .
 
 git commit -m"Init project"
 
-git push
+git push --set-upstream origin main
