@@ -1,0 +1,42 @@
+{
+  "name": "expressjs-starter",
+  "version": "1.0.0",
+  "description": "Expressjs Starter Project",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prestart": "npm run build",
+    "start": "node .",
+    "build": "tsc -p .",
+    "dev": "nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coumarane/expressjs-starter.git"
+  },
+  "keywords": [
+    "Expressjs"
+  ],
+  "author": "Coumarane COUPPANE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coumarane/expressjs-starter/issues"
+  },
+  "homepage": "https://github.com/coumarane/expressjs-starter#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/express-handlebars": "^6.0.0",
+    "@types/node": "^18.6.3",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4"
+  }
+}
